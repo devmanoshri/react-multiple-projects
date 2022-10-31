@@ -4,9 +4,23 @@ import FoodData from "../../data/2-food-menu-data";
 import Category from "./Category";
 import Menu from "./Menu";
 
+const uniqueCategories = [
+  "all",
+  ...new Set(FoodData.map((item) => item.category)),
+];
+
 export default function Main() {
   const [menuItems, setMenuItems] = useState(FoodData);
-  const [categories, setCategories] = useState({});
+  const [categories, setCategories] = useState(uniqueCategories);
+
+  const filterItems = (category) => {
+    if (category === "all") {
+      setMenuItems(FoodData);
+      return;
+    }
+    const newItems = FoodData.filter((item) => item.category === category);
+    setMenuItems(newItems);
+  };
 
   return (
     <main>
@@ -15,7 +29,7 @@ export default function Main() {
           <h2>Menu Items</h2>
           <div className="underline"></div>
         </div>
-        <Category />
+        <Category filterItems={filterItems} categories={categories} />
         <Menu items={menuItems} />
       </section>
     </main>
