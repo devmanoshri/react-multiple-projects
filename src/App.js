@@ -2,7 +2,8 @@
 //import FoodMenu from "./components/2-food-menu/Main";
 //import Tab from "./components/3-tab/Main";
 //import Slider from "./components/4-slider/Main";
-import Lorem from "./components/5-lorem-ipsum-generator/Main";
+//import Lorem from "./components/5-lorem-ipsum-generator/Main";
+import ColorGenerator from "./components/6-color-generator/Main";
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       {/* <MainAccordion></MainAccordion> 
       <FoodMenu />
       <Tab />
-      <Slider />*/}
-      <Lorem />
+      <Slider />
+      <Lorem />*/}
+      <ColorGenerator />
     </>
   );
 }
