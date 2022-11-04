@@ -3,8 +3,8 @@
 //import Tab from "./components/3-tab/Main";
 //import Slider from "./components/4-slider/Main";
 //import Lorem from "./components/5-lorem-ipsum-generator/Main";
-import ColorGenerator from "./components/6-color-generator/Main";
-
+//import ColorGenerator from "./components/6-color-generator/Main";
+import Grocery from "./components/7-grocery-list/Main-practice2";
 function App() {
   return (
     <>
@@ -12,8 +12,9 @@ function App() {
       <FoodMenu />
       <Tab />
       <Slider />
-      <Lorem />*/}
-      <ColorGenerator />
+      <Lorem />
+      <ColorGenerator />*/}
+      <Grocery />
     </>
   );
 }
