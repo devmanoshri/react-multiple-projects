@@ -17,10 +17,10 @@ function MainPractice2() {
     e.preventDefault();
     if (!name) {
       showAlert(true, "danger", "Please enter name!");
-      console.log("no field block");
+      //console.log("no field block");
     } else {
       if (isEdit) {
-        console.log("edit block");
+        // console.log("edit block");
         list[editId].title = name;
         setName("");
         setIsEdit(false);
@@ -29,10 +29,9 @@ function MainPractice2() {
       } else {
         const newItem = { id: new Date().getTime().toString(), title: name };
         setList([...list, newItem]);
-        showAlert(true, "success", "New Item added!");
-        console.log(list);
-        console.log("new add block");
+        // console.log("new add block");
         setName("");
+        showAlert(true, "success", "New Item added!");
       }
     }
   };
