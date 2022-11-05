@@ -4,7 +4,9 @@
 //import Slider from "./components/4-slider/Main";
 //import Lorem from "./components/5-lorem-ipsum-generator/Main";
 //import ColorGenerator from "./components/6-color-generator/Main";
-import Grocery from "./components/7-grocery-list/Main-practice2";
+//import Grocery from "./components/7-grocery-list/Main-practice2";
+import Navbar from "./components/8-navbar/Main";
+
 function App() {
   return (
     <>
@@ -13,8 +15,9 @@ function App() {
       <Tab />
       <Slider />
       <Lorem />
-      <ColorGenerator />*/}
-      <Grocery />
+      <ColorGenerator />
+      <Grocery />*/}
+      <Navbar />
     </>
   );
 }
