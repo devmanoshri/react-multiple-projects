@@ -6,8 +6,8 @@
 //import ColorGenerator from "./components/6-color-generator/Main";
 //import Grocery from "./components/7-grocery-list/Main-practice2";
 //import Navbar from "./components/8-navbar/Main";
-import SidebarModal from "./components/9-sidebar-modal/Main";
-
+//import SidebarModal from "./components/9-sidebar-modal/Main";
+import Cart from "./components/10-cart/Main";
 function App() {
   return (
     <>
@@ -18,8 +18,9 @@ function App() {
       <Lorem />
       <ColorGenerator />
       <Grocery />
-      <Navbar />*/}
-      <SidebarModal />
+      <Navbar />
+      <SidebarModal />*/}
+      <Cart />
     </>
   );
 }
